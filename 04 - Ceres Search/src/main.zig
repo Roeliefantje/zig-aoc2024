@@ -38,15 +38,8 @@ pub fn get_mas_crosses(word_search: [][]u8) !i32 {
 
     for (word_search, 0..) |line, y| {
         const y_i32: i32 = @intCast(y);
-        // if (y == 0 or y == word_search.len - 1) {
-        //     continue;
-        // }
 
         for (line, 0..) |char, x| {
-            // if (x == 0 or x == line.len - 1) {
-            //     continue;
-            // }
-
             if (char == 'A') {
                 const x_i32: i32 = @intCast(x);
                 const string_left_array = [3]u8{ 'M', 'A', 'S' };
